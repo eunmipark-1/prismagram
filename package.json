@@ -1,0 +1,25 @@
+{
+  "name": "prismagram",
+  "version": "1.0.0",
+  "description": "instagran clone coding exam",
+  "repository": "https://github.com/eunmipark-1/prismagram.git",
+  "author": "박은미 <mia1221@kakao.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^6.2.1",
+    "graphql-yoga": "^1.18.3",
+    "merge-graphql-schemas": "^1.7.8",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "dev": "nodemon --exec npx babel-node src/server.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "nodemon": "^2.0.4"
+  }
+}
