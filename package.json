@@ -14,7 +14,8 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "dev": "nodemon --exec npx babel-node src/server.js"
+   "deploy" : "prisma deploy",
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
