@@ -1,7 +1,7 @@
 type User {
   id: ID! 
   userName: String! 
-  email : String! 
+  email: String! 
   firstName: String 
   lastname: String
   bio: String
@@ -11,7 +11,7 @@ type User {
   likes: [Like!]!
   comments: [Comment!]!
   rooms: [Room!]!
-  
+  loginSecret: String
 }
 
 type Post {
