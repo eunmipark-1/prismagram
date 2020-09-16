@@ -1,5 +1,5 @@
 type User {
-  id: ID! @id 
+  id: ID! 
   userName: String! 
   email : String! 
   firstName: String 
@@ -15,42 +15,43 @@ type User {
 }
 
 type Post {
-  id: ID! @id  
+  id: ID!  
   location:String!
   caption: String!
   user: User!
   files: [File!]!
   likes: [Like!]!
   comments: [Comment!]!
+  loginSecret: String!
 }
 
 type Like {
-  id: ID! @id
+  id: ID! 
   user: User!
   post: Post!
 }
 
 type Comment {
-  id: ID! @id 
+  id: ID!  
   text: String!
   user: User!
   post: Post!
 }
 
 type File {
-  id: Int!  
+  id: ID!  
   url: String!
   post: Post!
 }
 
 type Room {
-  id: ID! @id 
+  id: ID! 
   participants: [User!]!
   message: [Message!]!
 }
 
 type Message {
-  id: ID! @id 
+  id: ID! 
   text:String!
   from : User! 
   to: User! 
