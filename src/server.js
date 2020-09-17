@@ -6,7 +6,6 @@ import logger from "morgan";
 import schema from "./schema";
 import {sendSecretMail} from "./utils";
 
-sendSecretMail("보내고자 하는 이메일 주소", "1234");
 
 const PORT = process.env.PORT || 4000;
 /*

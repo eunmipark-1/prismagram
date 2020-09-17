@@ -25,16 +25,12 @@ export const sendMail = (email) => {
   return client.sendMail(email);
 };
 
-
-
-
-
 export const sendSecretMail = (address, secret) => {
   const email = {
-    from : "sendGrid 설정 이메일",
+    from : "mia1221@kakao.com",
     to: address,
     subject: "Login Secret for prismagram" ,
-    html : `Hello~! Your login secret it ${secret}.<br/>Copy and paste on the app/website to log in`
+    html : `Hello~! Your login secret is <b>${secret}</b>.<br/>Copy and paste on the app/website to log in`
   };
   return sendMail(email);
 };
