@@ -4,8 +4,8 @@ clone coding instagram express + prisma + react and react native
 ## User Stories
 - [x] Create account
 - [x] Request secret 
-- [] Confirm secret (Login)
-- [] Like / Unlike a photo
+- [x] Confirm secret (Login)
+- [x] Like / Unlike a photo
 - [] Comment on a photo
 - [] Search by user
 - [] Search by location
