@@ -10,8 +10,10 @@ clone coding instagram express + prisma + react and react native
 - [x] Search by user
 - [x] Search by location
 - [x] Follow / Unfollow User
-- [] See user profile
-- [] Edit my profile
+- [x] Edit my profile
+- [x] See user profile
+- [x] See my profile
+- []  See the full Photo
 - [] Upload a photo
 - [] Edit the Photo(Delete)
 - [] See the feed
