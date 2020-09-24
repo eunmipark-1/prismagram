@@ -6,7 +6,7 @@ export default {
       
       return `${parent.firstName} ${parent.lastname}`;
     },
-    amIFollowing: async(parent, _, {request}) => {
+    isFollowing: async(parent, _, {request}) => {
       const { user } = request;
       const { id:parentId } = parent;
       try {
@@ -19,13 +19,12 @@ export default {
       
       } catch { 
         return false;
-      }
-      
+      } 
     },
-    itsMe: (parent, _, {request}) => {
+    isSelf: (parent, _, {request}) => {
       const {user} = request;
       const {id: parentId} = parent;
       return user.id === parentId;
-    }
+    } 
   }
-}
+};
