@@ -19,5 +19,5 @@ clone coding instagram express + prisma + react and react native
 - [x] See the feed
 - [x] See rooms
 - [x] See Room
-- [] Send private Message
+- [x] Send private Message
 - [] Receive Message(Realtime)
