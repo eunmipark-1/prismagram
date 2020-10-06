@@ -1,10 +1,10 @@
 import { prisma } from "../../../../generated/prisma-client";
-export default {
 
-  Query : {
+export default {
+  Query: {
     seeRooms: (_, __, {request, isAuthenticated}) => {
       isAuthenticated(request);
-      const { user } = request;
+      const {user} = request;
       return prisma.rooms({
         where: {
           participants_some: {
@@ -12,6 +12,7 @@ export default {
           }
         }
       });
+
     }
   }
-};
+}
