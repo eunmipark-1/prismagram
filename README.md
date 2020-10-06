@@ -18,6 +18,6 @@ clone coding instagram express + prisma + react and react native
 - [x] Edit the Photo(Delete)
 - [x] See the feed
 - [x] See rooms
-- [] See Room
+- [x] See Room
 - [] Send private Message
 - [] Receive Message(Realtime)
