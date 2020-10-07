@@ -13,7 +13,7 @@ type User {
   followingCount: Int!
   followers: [User!]! 
   followersCount: Int!
-  post: [Post!]!
+  posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
   rooms: [Room!]!
