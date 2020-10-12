@@ -5,12 +5,12 @@ import jwt from 'jsonwebtoken';
 
 export const generateSecret = () => {
   const randomNumber = Math.floor(Math.random() * adjectives.length)
-  return sendMail(email);
+  return `${adjectives[randomNumber]} ${nouns[randomNumber]}`;
 }
 
 //console.log(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
 
-export const sendMail = (email) => {
+const sendMail = (email) => {
   const options = {
     auth: {
       api_user: process.env.SENDGRID_USERNAME,
